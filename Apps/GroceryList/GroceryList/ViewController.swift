@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Grocery List
+//  GroceryList
 //
 //  Created by isBSO on 3/25/17.
 //  Copyright © 2017 isBSO. All rights reserved.

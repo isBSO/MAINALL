@@ -1,6 +1,6 @@
 //
-//  Grocery_ListUITests.swift
-//  Grocery ListUITests
+//  GroceryListUITests.swift
+//  GroceryListUITests
 //
 //  Created by isBSO on 3/25/17.
 //  Copyright © 2017 isBSO. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Grocery_ListUITests: XCTestCase {
+class GroceryListUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
