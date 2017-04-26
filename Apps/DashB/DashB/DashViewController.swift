@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DashViewController: UIViewController {
+    @IBOutlet weak var collectionView: UICollectionView!
+    var dataSource = DashData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        dataSource.composeData()
+        collectionView.dataSource = dataSource
+      
     }
 
     override func didReceiveMemoryWarning() {

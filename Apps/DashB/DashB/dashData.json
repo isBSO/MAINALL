@@ -1,0 +1,14 @@
+[
+  {
+    "dashTitle": "Spring Event",
+    "dashType": "dashEvent",
+    "dashUI": {
+      "height": 250,
+      "proportion": 2.5,
+      "dashDisplaytitle": "Spring Event",
+      "dashMoreTitle": " View More",
+      "dashDisplaySubtitle": "Spring Event in full blow",
+      "imageUrl": "https://cdn.macrumors.com/article-new/2016/09/apple-watch-series-2-2.jpg"
+    }
+  }
+]
