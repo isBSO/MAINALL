@@ -9,26 +9,38 @@
 import UIKit
 import DashModels
 
-class DashData: NSObject, UICollectionViewDataSource {
+class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
     var items = Array<DashItem> ()
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return items.count;
+        return 1;
         
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashEventCollectionViewCell", for: indexPath) as! DashEventCollectionViewCell
-        
-        cell.titleLabel.text = items[indexPath.row].dashTitle
+        let dash = items[indexPath.row]
+        cell.titleLabel.text = dash.dashTitle
+        if dash.dashType == DashType.event {
+           
+        }
+        cell.imageView.downloadedFrom(link: dash.dashUI.imageUrl)
         return cell;
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return items.count
     }
-    func composeData()  {
-        let dashItem = DashItem()
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // your code here
         
-        items = [dashItem.createCompose("Spring Event ")]
+        let dash = items[indexPath.row]
+        return     CGSize(width: collectionView.frame.size.width, height: max(collectionView.frame.size.width*dash.dashUI.proportion, dash.dashUI.height))
+        
+    }
+    
+    func composeData()  {
+ 
         //welcome to swift
         let itemsResponse =   DashExtensions().loadLocalJsonFile(fileName: "dashData") as! Array<Any>
         

@@ -1,14 +1,26 @@
-[
+ [
   {
-    "dashTitle": "Spring Event",
-    "dashType": "dashEvent",
-    "dashUI": {
-      "height": 250,
-      "proportion": 2.5,
-      "dashDisplaytitle": "Spring Event",
-      "dashMoreTitle": " View More",
-      "dashDisplaySubtitle": "Spring Event in full blow",
-      "imageUrl": "https://cdn.macrumors.com/article-new/2016/09/apple-watch-series-2-2.jpg"
-    }
+  "dashTitle": "Value Prop",
+  "dashType": "dashEvent",
+  "dashUI": {
+  "height": 120,
+  "proportion": 0.2,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "https://cdn.macrumors.com/article-new/2016/09/apple-watch-series-2-2.jpg"
   }
-]
+  },
+  {
+  "dashTitle": "Summer Event",
+  "dashType": "dashEvent",
+  "dashUI": {
+  "height": 200,
+  "proportion": 0.36,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "https://c1.staticflickr.com/5/4059/4702987737_e0c32cc679_z.jpg"
+  }
+  }
+  ]

@@ -11,4 +11,5 @@ import UIKit
 class DashEventCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var imageView: UIImageView!
 }
