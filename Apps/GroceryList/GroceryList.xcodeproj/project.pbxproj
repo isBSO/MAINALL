@@ -13,6 +13,7 @@
 		CC4CC52A1E870F74001B7838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4CC5291E870F74001B7838 /* Assets.xcassets */; };
 		CC4CC52D1E870F74001B7838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4CC52B1E870F74001B7838 /* LaunchScreen.storyboard */; };
 		CC4CC5381E870F74001B7838 /* GroceryListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CC5371E870F74001B7838 /* GroceryListUITests.swift */; };
+		CC4CC5431E871092001B7838 /* NewGroceryListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CC5421E871092001B7838 /* NewGroceryListCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CC4CC5331E870F74001B7838 /* GroceryListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4CC5371E870F74001B7838 /* GroceryListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListUITests.swift; sourceTree = "<group>"; };
 		CC4CC5391E870F74001B7838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4CC5421E871092001B7838 /* NewGroceryListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroceryListCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				CC4CC5221E870F74001B7838 /* AppDelegate.swift */,
 				CC4CC5241E870F74001B7838 /* ViewController.swift */,
+				CC4CC5421E871092001B7838 /* NewGroceryListCollectionViewController.swift */,
 				CC4CC5261E870F74001B7838 /* Main.storyboard */,
 				CC4CC5291E870F74001B7838 /* Assets.xcassets */,
 				CC4CC52B1E870F74001B7838 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4CC5431E871092001B7838 /* NewGroceryListCollectionViewController.swift in Sources */,
 				CC4CC5251E870F74001B7838 /* ViewController.swift in Sources */,
 				CC4CC5231E870F74001B7838 /* AppDelegate.swift in Sources */,
 			);
