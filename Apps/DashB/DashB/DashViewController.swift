@@ -16,8 +16,14 @@ class DashViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         dataSource.composeData()
-        collectionView.dataSource = dataSource
-          collectionView.delegate = dataSource
+       
+        
+       // DispatchQueue.main.asyncAfter(deadline: .now() + 5.1) {
+            // your code here
+            self.collectionView.dataSource = self.dataSource
+            self.collectionView.delegate = self.dataSource
+            
+        //}
         
       
     }

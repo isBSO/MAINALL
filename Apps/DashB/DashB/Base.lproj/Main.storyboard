@@ -29,7 +29,7 @@
                                     <size key="itemSize" width="327" height="213"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="100"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DashEventCollectionViewCell" id="rzI-o2-ul9" customClass="DashEventCollectionViewCell" customModule="DashB" customModuleProvider="target">
@@ -63,6 +63,29 @@
                                         <connections>
                                             <outlet property="imageView" destination="og8-AH-XO0" id="2Wk-5O-BW1"/>
                                             <outlet property="titleLabel" destination="fqe-s0-ryj" id="l3p-Sp-MNH"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FullBannerDynamicCollectionViewCell" id="ppn-EL-yBZ" customClass="FullBannerDynamicCollectionViewCell" customModule="DashB" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="223" width="327" height="213"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="213"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i14-Br-KwV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="213"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="i14-Br-KwV" firstAttribute="leading" secondItem="ppn-EL-yBZ" secondAttribute="leadingMargin" constant="-8" id="8Lq-Ko-Qhh"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="i14-Br-KwV" secondAttribute="bottom" constant="-8" id="Jcb-Rw-awX"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="i14-Br-KwV" secondAttribute="trailing" constant="-8" id="sML-DQ-uG5"/>
+                                            <constraint firstItem="i14-Br-KwV" firstAttribute="top" secondItem="ppn-EL-yBZ" secondAttribute="topMargin" constant="-8" id="z65-Qz-Vga"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="i14-Br-KwV" id="Pd6-r3-ndN"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

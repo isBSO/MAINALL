@@ -11,7 +11,7 @@ import UIKit
 public enum DashType {
     case notSet
     case event
-    case C
+    case dashValuePropFull
     case D
 }
 
@@ -34,6 +34,9 @@ public class DashItem: NSObject {
     func dashtypeFromString(_ dashType:String) -> DashType {
         if dashType.contains("dashEvent"){
             return DashType.event
+        }
+        if dashType.contains("dashValuePropFull"){
+            return DashType.dashValuePropFull
         }
         return DashType.notSet
     }
