@@ -1,26 +1,62 @@
  [
   {
-  "dashTitle": "Value Prop",
+  "dashTitle": "Every thing you need in your office",
+  "dashType": "dashEvent",
+  "dashUI": {
+  "height": 200,
+  "proportion": 0.6,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "https://go.staplesadvantage.com/rs/896-JNU-907/images/sba-lead-gen-2017-services-item.jpg"
+  }
+  },
+  {
+  "dashTitle": "$29.99 offers",
+  "dashType": "dashEvent",
+  "dashUI": {
+  "height": 220,
+  "proportion": 0.66,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "https://s7d5.scene7.com/is/image/Staples/59408_ios_710x350_paper?$710x350%20new%20iphone$"
+  }
+  },
+  {
+  "dashTitle": "Surface VS iPad Pro",
+  "dashType": "dashEvent",
+  "dashUI": {
+  "height": 220,
+  "proportion": 0.86,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg"
+  }
+  },
+  {
+  "dashTitle": "Full banner Ad",
+  "dashType": "dashValuePropFull",
+  "dashUI": {
+  "height": 0,
+  "proportion": 0.4926,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/howtoapplyga.jpg"
+  }
+  },
+  {
+  "dashTitle": "Apple watch event starts now",
   "dashType": "dashEvent",
   "dashUI": {
   "height": 120,
-  "proportion": 0.2,
+  "proportion": 0.8,
   "dashDisplaytitle": "Spring Event",
   "dashMoreTitle": " View More",
   "dashDisplaySubtitle": "Spring Event in full blow",
   "imageUrl": "https://cdn.macrumors.com/article-new/2016/09/apple-watch-series-2-2.jpg"
-  }
-  },
-  {
-  "dashTitle": "Summer Event",
-  "dashType": "dashEvent",
-  "dashUI": {
-  "height": 200,
-  "proportion": 0.36,
-  "dashDisplaytitle": "Spring Event",
-  "dashMoreTitle": " View More",
-  "dashDisplaySubtitle": "Spring Event in full blow",
-  "imageUrl": "https://c1.staticflickr.com/5/4059/4702987737_e0c32cc679_z.jpg"
   }
   }
   ]

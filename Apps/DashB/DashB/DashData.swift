@@ -17,12 +17,18 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
         
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashEventCollectionViewCell", for: indexPath) as! DashEventCollectionViewCell
         let dash = items[indexPath.row]
-        cell.titleLabel.text = dash.dashTitle
-        if dash.dashType == DashType.event {
-           
-        }
+         if dash.dashType == DashType.event {
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashEventCollectionViewCell", for: indexPath) as! DashEventCollectionViewCell
+            let dash = items[indexPath.row]
+            cell.titleLabel.text = dash.dashTitle
+            //FullBannerDynamicCollectionViewCell
+            cell.imageView.downloadedFrom(link: dash.dashUI.imageUrl)
+            return cell;
+         }
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "FullBannerDynamicCollectionViewCell", for: indexPath) as! FullBannerDynamicCollectionViewCell
+       
+     
         cell.imageView.downloadedFrom(link: dash.dashUI.imageUrl)
         return cell;
     }
