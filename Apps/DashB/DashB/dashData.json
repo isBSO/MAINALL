@@ -24,11 +24,23 @@
   }
   },
   {
+  "dashTitle": "fullScreen",
+  "dashType": "dashValuePropFull",
+  "dashUI": {
+  "height": 220,
+  "proportion": 1,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "https://unveiledwife.com/wp-content/uploads/2015/11/25-christmas-gift-ideas-for-your-husband.jpg"
+  }
+  },
+  {
   "dashTitle": "Surface VS iPad Pro",
   "dashType": "dashEvent",
   "dashUI": {
   "height": 220,
-  "proportion": 0.86,
+  "proportion": 0.66,
   "dashDisplaytitle": "Spring Event",
   "dashMoreTitle": " View More",
   "dashDisplaySubtitle": "Spring Event in full blow",
