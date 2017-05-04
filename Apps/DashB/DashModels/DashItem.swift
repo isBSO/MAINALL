@@ -41,42 +41,56 @@ public class DashUI: NSObject,NSCoding {
     public func encode(with coder: NSCoder) {
         coder.encode(imageUrl, forKey: "imageUrl")
         coder.encode(height, forKey: "height")
-       // coder.encode(imageCache, forKey: "imageCache")
+        // coder.encode(imageCache, forKey: "imageCache")
         
         coder.encode(UIImageJPEGRepresentation(imageCache, 1.0), forKey: "imageCache")
         coder.encode(proportion, forKey: "proportion")
     }
-   
+    
 }
 public class DashItem: NSObject , NSCoding {
-   public var dashTitle :String = String()
-   public var dashType:DashType = DashType.event
-    public var dashTypeString:String  = String()
-   public var dashUI:DashUI!
+    public var dashTitle :String = String()
+    public var dashType:DashType {
+        set{
+            
+        }
+        get{
+            if self.dashTypeString.contains("dashEvent"){
+                return DashType.event
+            }
+            if self.dashTypeString.contains("dashValuePropFull"){
+                return DashType.dashValuePropFull
+            }
+            return DashType.notSet
+        }
+    }
     
-   public override init() {
+    public var dashTypeString:String  = String()
+    public var dashUI:DashUI!
+    
+    public override init() {
         super.init()
     }
     required public init(coder decoder: NSCoder) {
         self.dashTitle = decoder.decodeObject(forKey: "dashTitle") as? String ?? ""
-         self.dashTypeString = decoder.decodeObject(forKey: "dashTypeString") as? String ?? ""
+        self.dashTypeString = decoder.decodeObject(forKey: "dashTypeString") as? String ?? ""
         
         self.dashUI = decoder.decodeObject(forKey: "dashUI")! as! DashUI
-       
         
         
-      
+        
+        
     }
     
     public func encode(with coder: NSCoder) {
         coder.encode(dashTitle, forKey: "dashTitle")
         coder.encode(dashUI, forKey: "dashUI")
         coder.encode(self.dashTypeString, forKey: "dashTypeString")
-     
-     
+        
+        
     }
     
-   public  func createCompose(_ itemTitle:String)->DashItem{
+    public  func createCompose(_ itemTitle:String)->DashItem{
         let d = DashItem()
         d.dashTitle = itemTitle;
         return d
