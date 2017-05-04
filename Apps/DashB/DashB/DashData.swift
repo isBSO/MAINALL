@@ -52,13 +52,16 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
     }
     
     func composeData()  {
- 
+       
         //welcome to swift
         let itemsResponse =   DashExtensions().loadLocalJsonFile(fileName: "dashData") as! Array<Any>
         
         
         // wow finally got array
-        DashDataSource.shared.items = DashItem().parse(itemsResponse)
+        if DashDataSource.shared.items.count<1 {
+            DashDataSource.shared.items = DashItem().parse(itemsResponse)
+        }
+      //
         
     }
 

@@ -15,17 +15,66 @@ public enum DashType {
     case D
 }
 
-public class DashUI: NSObject {
+public class DashUI: NSObject,NSCoding {
     public var imageUrl :String = String()
     public var height :CGFloat = 0
     public var imageCache : UIImage  = UIImage()
     public var proportion :CGFloat = 0
+   public override init() {
+        super.init()
+    }
+    required public init(coder decoder: NSCoder) {
+        self.imageUrl = decoder.decodeObject(forKey: "imageUrl") as? String ?? ""
+        self.height = (decoder.decodeObject(forKey: "height") as? CGFloat)!
+        if  let imageData = decoder.decodeObject(forKey: "imageCache"){
+            self.imageCache = UIImage(data: imageData as! Data)!
+        }
+        
+
+        //  = decoder.decodeObject(forKey: "imageCache")! as! UIImage
+            
+        
+        self.proportion = (decoder.decodeObject(forKey: "proportion") as? CGFloat)!
+
+    }
+    
+    public func encode(with coder: NSCoder) {
+        coder.encode(imageUrl, forKey: "imageUrl")
+        coder.encode(height, forKey: "height")
+       // coder.encode(imageCache, forKey: "imageCache")
+        
+        coder.encode(UIImageJPEGRepresentation(imageCache, 1.0), forKey: "imageCache")
+        coder.encode(proportion, forKey: "proportion")
+    }
    
 }
-public class DashItem: NSObject {
+public class DashItem: NSObject , NSCoding {
    public var dashTitle :String = String()
    public var dashType:DashType = DashType.event
+    public var dashTypeString:String  = String()
    public var dashUI:DashUI!
+    
+   public override init() {
+        super.init()
+    }
+    required public init(coder decoder: NSCoder) {
+        self.dashTitle = decoder.decodeObject(forKey: "dashTitle") as? String ?? ""
+         self.dashTypeString = decoder.decodeObject(forKey: "dashTypeString") as? String ?? ""
+        
+        self.dashUI = decoder.decodeObject(forKey: "dashUI")! as! DashUI
+       
+        
+        
+      
+    }
+    
+    public func encode(with coder: NSCoder) {
+        coder.encode(dashTitle, forKey: "dashTitle")
+        coder.encode(dashUI, forKey: "dashUI")
+        coder.encode(self.dashTypeString, forKey: "dashTypeString")
+     
+     
+    }
     
    public  func createCompose(_ itemTitle:String)->DashItem{
         let d = DashItem()
@@ -42,6 +91,8 @@ public class DashItem: NSObject {
         return DashType.notSet
     }
     
+
+    
     public  func parse(_ itemsArray:Array<Any>)->Array<DashItem>{
         print(itemsArray);
         var items : Array<DashItem> = []
@@ -50,6 +101,7 @@ public class DashItem: NSObject {
             let dictionaryValue = dict as! NSDictionary
             let dash = DashItem().createCompose(dictionaryValue["dashTitle"] as! String)
             dash.dashType = dashtypeFromString(dictionaryValue["dashType"] as! String)
+            dash.dashTypeString = dictionaryValue["dashType"]as! String
             dashUI = DashUI()
             let dashUIDict = dictionaryValue["dashUI"] as! NSDictionary
             dashUI.imageUrl = dashUIDict["imageUrl"] as! String
@@ -63,5 +115,6 @@ public class DashItem: NSObject {
       
       return items
     }
+    
 
 }
