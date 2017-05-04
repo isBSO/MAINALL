@@ -22,6 +22,7 @@
 		CCBADAF81EB049200005FD52 /* dashData.json in Resources */ = {isa = PBXBuildFile; fileRef = CCBADAF71EB049200005FD52 /* dashData.json */; };
 		CCBADAFA1EB04B360005FD52 /* DashExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBADAF91EB04B360005FD52 /* DashExtensions.swift */; };
 		CCBADAFC1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBADAFB1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift */; };
+		CCBADAFE1EBAA76B0005FD52 /* DashDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBADAFD1EBAA76B0005FD52 /* DashDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		CCBADAF71EB049200005FD52 /* dashData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dashData.json; sourceTree = "<group>"; };
 		CCBADAF91EB04B360005FD52 /* DashExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashExtensions.swift; sourceTree = "<group>"; };
 		CCBADAFB1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullBannerDynamicCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCBADAFD1EBAA76B0005FD52 /* DashDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				CCBADAF51EB0455A0005FD52 /* DashEventCollectionViewCell.swift */,
 				CCBADAFB1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift */,
 				CCBADADF1EB03C930005FD52 /* DashData.swift */,
+				CCBADAFD1EBAA76B0005FD52 /* DashDataSource.swift */,
 				CCBADAF91EB04B360005FD52 /* DashExtensions.swift */,
 				CCBADAF71EB049200005FD52 /* dashData.json */,
 				CCBADAC31EB0389A0005FD52 /* Main.storyboard */,
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCBADAE01EB03C930005FD52 /* DashData.swift in Sources */,
+				CCBADAFE1EBAA76B0005FD52 /* DashDataSource.swift in Sources */,
 				CCBADAFA1EB04B360005FD52 /* DashExtensions.swift in Sources */,
 				CCBADAC21EB0389A0005FD52 /* DashViewController.swift in Sources */,
 				CCBADAC01EB0389A0005FD52 /* AppDelegate.swift in Sources */,
@@ -607,6 +611,7 @@
 				CCBADAF11EB042360005FD52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

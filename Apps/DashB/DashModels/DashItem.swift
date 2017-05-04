@@ -18,6 +18,7 @@ public enum DashType {
 public class DashUI: NSObject {
     public var imageUrl :String = String()
     public var height :CGFloat = 0
+    public var imageCache : UIImage  = UIImage()
     public var proportion :CGFloat = 0
    
 }
