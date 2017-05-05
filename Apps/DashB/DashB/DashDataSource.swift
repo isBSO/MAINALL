@@ -29,7 +29,7 @@ class DashDataSource: NSObject {
         // retrieving a value for a key
         if  UserDefaults.standard.float(forKey: "lastVersion") == instance.lastVersion{
             
-            if let data = UserDefaults.standard.data(forKey: "PlayersInUserDefaults"){
+            if let data = UserDefaults.standard.data(forKey: "items"){
                 instance.items = NSKeyedUnarchiver.unarchiveObject(with: data) as! Array<DashItem>
             }
          
@@ -49,7 +49,7 @@ class DashDataSource: NSObject {
         let dataBlob = NSKeyedArchiver.archivedData(withRootObject: items)
         
         // now we store the NSData blob in the user defaults
-        UserDefaults.standard.set(dataBlob, forKey: "PlayersInUserDefaults")
+        UserDefaults.standard.set(dataBlob, forKey: "items")
           UserDefaults.standard.set(lastVersion, forKey: "lastVersion")
         // make sure we save/sync before loading again
         UserDefaults.standard.synchronize()

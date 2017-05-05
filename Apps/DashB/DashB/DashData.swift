@@ -58,11 +58,11 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
         
         
         // wow finally got array
-        if DashDataSource.shared.items.count<1 {
-            DashDataSource.shared.items = DashItem().parse(itemsResponse)
+         let newItems = DashItem().parse(itemsResponse)
+        if newItems.count !=  DashDataSource.shared.items.count{
+             DashDataSource.shared.items = newItems
         }
-      //
         
-    }
+        }
 
 }
