@@ -11,7 +11,7 @@ import DashModels
 
 class DashDataSource: NSObject {
    var items = Array<DashItem> ()
-    let lastVersion: Float = 1.01;
+    let lastVersion: Float = 1.02;
     //Very easy Singlton
     
     // Can't init is singleton

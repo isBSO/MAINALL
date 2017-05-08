@@ -24,7 +24,6 @@
   }
   },
   {
-
   "dashTitle": "",
   "dashType": "dashValuePropFull",
   "dashUI": {
@@ -37,14 +36,11 @@
   }
   },
   {
-
   "dashTitle": "Surface VS iPad Pro",
   "dashType": "dashEvent",
   "dashUI": {
   "height": 220,
-
   "proportion": 0.66,
-
   "dashDisplaytitle": "Spring Event",
   "dashMoreTitle": " View More",
   "dashDisplaySubtitle": "Spring Event in full blow",
@@ -73,6 +69,18 @@
   "dashMoreTitle": " View More",
   "dashDisplaySubtitle": "Spring Event in full blow",
   "imageUrl": "https://cdn.macrumors.com/article-new/2016/09/apple-watch-series-2-2.jpg"
+  }
+  },
+  {
+  "dashTitle": "Demo ",
+  "dashType": "dashMenu",
+  "dashUI": {
+  "height": 120,
+  "proportion": 0.1,
+  "dashDisplaytitle": "",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Menu",
+  "imageUrl": ""
   }
   }
   ]
