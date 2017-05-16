@@ -8,31 +8,28 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, DataDownloaderProgressDelegate{
+    func didFinishDownload(errorOccured: Bool) {
+          print("File Failed ")
+    }
+
     
-    var activeDownloads = [String: DataDownloader]()
-    
-    lazy var downloadsSession: URLSession = {
-        let configuration = URLSessionConfiguration.default
-        let session = URLSession(configuration: configuration, delegate: self as? URLSessionDelegate, delegateQueue: nil)
-        return session
-    }()
+    var dataD :DataDownloader!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataD = DataDownloader(url:"http://www.google.com/" )
+        dataD.delegate = self
+        dataD.download()
     
         // Do any additional setup after loading the view.
     }
-
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func progressUp(progress: Float) {
+        print(progress)
+      
     }
-    */
+    
+
 
 }

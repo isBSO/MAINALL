@@ -111,10 +111,10 @@ public class DashItem: NSObject , NSCoding {
 
     
     public  func parse(_ itemsArray:Array<Any>)->Array<DashItem>{
-        print(itemsArray);
+//        print(itemsArray);
         var items : Array<DashItem> = []
         for dict in itemsArray {
-            print(dict as! NSDictionary)
+//            print(dict as! NSDictionary)
             let dictionaryValue = dict as! NSDictionary
             let dash = DashItem().createCompose(dictionaryValue["dashTitle"] as! String)
             dash.dashType = dashtypeFromString(dictionaryValue["dashType"] as! String)
