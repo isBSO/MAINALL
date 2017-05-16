@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6776D0541EC0041900F5978B /* DashMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0531EC0041900F5978B /* DashMenuCell.swift */; };
+		6776D0561EC0181800F5978B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0551EC0181800F5978B /* MenuViewController.swift */; };
+		6776D0581EC01CF900F5978B /* DataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0571EC01CF900F5978B /* DataDownloader.swift */; };
 		CCBADAC01EB0389A0005FD52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBADABF1EB0389A0005FD52 /* AppDelegate.swift */; };
 		CCBADAC21EB0389A0005FD52 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBADAC11EB0389A0005FD52 /* DashViewController.swift */; };
 		CCBADAC51EB0389A0005FD52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBADAC31EB0389A0005FD52 /* Main.storyboard */; };
@@ -57,6 +60,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6776D0531EC0041900F5978B /* DashMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashMenuCell.swift; sourceTree = "<group>"; };
+		6776D0551EC0181800F5978B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6776D0571EC01CF900F5978B /* DataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDownloader.swift; sourceTree = "<group>"; };
 		CCBADABC1EB0389A0005FD52 /* DashB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBADABF1EB0389A0005FD52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCBADAC11EB0389A0005FD52 /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
@@ -130,9 +136,12 @@
 			children = (
 				CCBADABF1EB0389A0005FD52 /* AppDelegate.swift */,
 				CCBADAC11EB0389A0005FD52 /* DashViewController.swift */,
+				6776D0551EC0181800F5978B /* MenuViewController.swift */,
 				CCBADAF51EB0455A0005FD52 /* DashEventCollectionViewCell.swift */,
 				CCBADAFB1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift */,
+				6776D0531EC0041900F5978B /* DashMenuCell.swift */,
 				CCBADADF1EB03C930005FD52 /* DashData.swift */,
+				6776D0571EC01CF900F5978B /* DataDownloader.swift */,
 				CCBADAFD1EBAA76B0005FD52 /* DashDataSource.swift */,
 				CCBADAF91EB04B360005FD52 /* DashExtensions.swift */,
 				CCBADAF71EB049200005FD52 /* dashData.json */,
@@ -315,8 +324,11 @@
 			files = (
 				CCBADAE01EB03C930005FD52 /* DashData.swift in Sources */,
 				CCBADAFE1EBAA76B0005FD52 /* DashDataSource.swift in Sources */,
+				6776D0541EC0041900F5978B /* DashMenuCell.swift in Sources */,
 				CCBADAFA1EB04B360005FD52 /* DashExtensions.swift in Sources */,
+				6776D0561EC0181800F5978B /* MenuViewController.swift in Sources */,
 				CCBADAC21EB0389A0005FD52 /* DashViewController.swift in Sources */,
+				6776D0581EC01CF900F5978B /* DataDownloader.swift in Sources */,
 				CCBADAC01EB0389A0005FD52 /* AppDelegate.swift in Sources */,
 				CCBADAF61EB0455A0005FD52 /* DashEventCollectionViewCell.swift in Sources */,
 				CCBADAFC1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift in Sources */,

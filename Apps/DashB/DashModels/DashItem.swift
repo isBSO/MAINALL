@@ -12,7 +12,7 @@ public enum DashType {
     case notSet
     case event
     case dashValuePropFull
-    case D
+    case menu
 }
 
 public class DashUI: NSObject,NSCoding {
@@ -60,6 +60,9 @@ public class DashItem: NSObject , NSCoding {
             }
             if self.dashTypeString.contains("dashValuePropFull"){
                 return DashType.dashValuePropFull
+            }
+            if self.dashTypeString.contains("dashMenu"){
+                return DashType.menu
             }
             return DashType.notSet
         }

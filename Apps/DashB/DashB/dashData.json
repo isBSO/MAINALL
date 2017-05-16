@@ -62,6 +62,7 @@
   {
   "dashTitle": "Apple watch event starts now",
   "dashType": "dashEvent",
+  "dashLink": "dash/Event/12345",
   "dashUI": {
   "height": 120,
   "proportion": 0.8,
@@ -74,8 +75,9 @@
   {
   "dashTitle": "Demo ",
   "dashType": "dashMenu",
+  "dashLink": "dash/menu",
   "dashUI": {
-  "height": 120,
+  "height": 66,
   "proportion": 0.1,
   "dashDisplaytitle": "",
   "dashMoreTitle": " View More",

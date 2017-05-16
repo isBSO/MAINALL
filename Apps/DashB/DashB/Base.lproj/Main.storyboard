@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DaJ-R1-Xub">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DaJ-R1-Xub">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,8 +32,34 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="100"/>
                                 </collectionViewFlowLayout>
                                 <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DashMenuCell" id="JdU-Hd-0nD" customClass="DashMenuCell" customModule="DashB" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="0.0" width="327" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="man" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwG-lv-oWf">
+                                                    <rect key="frame" x="179" y="0.0" width="33" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.53028111649999998" blue="0.41297483309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZwG-lv-oWf" firstAttribute="top" secondItem="JdU-Hd-0nD" secondAttribute="topMargin" constant="7" id="Kcx-Yq-0RC"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="ZwG-lv-oWf" secondAttribute="bottom" constant="6" id="PG6-mf-iVE"/>
+                                            <constraint firstItem="ZwG-lv-oWf" firstAttribute="leading" secondItem="JdU-Hd-0nD" secondAttribute="leadingMargin" constant="12" id="Ttb-40-W4Y"/>
+                                        </constraints>
+                                        <size key="customSize" width="327" height="50"/>
+                                        <connections>
+                                            <outlet property="dashTitle" destination="ZwG-lv-oWf" id="PD8-vc-bWm"/>
+                                        </connections>
+                                    </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DashEventCollectionViewCell" id="rzI-o2-ul9" customClass="DashEventCollectionViewCell" customModule="DashB" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="0.0" width="327" height="213"/>
+                                        <rect key="frame" x="28" y="60" width="327" height="213"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="327" height="213"/>
@@ -66,7 +92,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FullBannerDynamicCollectionViewCell" id="ppn-EL-yBZ" customClass="FullBannerDynamicCollectionViewCell" customModule="DashB" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="223" width="327" height="213"/>
+                                        <rect key="frame" x="28" y="283" width="327" height="213"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="327" height="213"/>
@@ -107,6 +133,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="eE1-FR-ClX">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="UB2-dB-BgY" customClass="MenuViewController" customModule="DashB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eqJ-tz-1uI"/>
+                        <viewControllerLayoutGuide type="bottom" id="meE-DA-qMJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IXT-d3-TsP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vys-Wk-NxF">
+                                <rect key="frame" x="183" y="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gR-4P-uBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="178"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7go-tv-D9n">

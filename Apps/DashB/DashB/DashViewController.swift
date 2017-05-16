@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashViewController: UIViewController {
+class DashViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
     @IBOutlet weak var collectionView: UICollectionView!
     var dataSource = DashData()
 
@@ -22,12 +22,23 @@ class DashViewController: UIViewController {
             // your code here
             self.collectionView.dataSource = self.dataSource
             self.collectionView.delegate = self.dataSource
+        self.dataSource.vc = self
+     
             
         //}
         
       
     }
 
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // your code here
+        
+        let dash = DashDataSource.shared.items[indexPath.row]
+        return     CGSize(width: collectionView.frame.size.width, height: max(collectionView.frame.size.width*dash.dashUI.proportion, dash.dashUI.height))
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
