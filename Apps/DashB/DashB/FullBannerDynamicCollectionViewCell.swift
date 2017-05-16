@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FullBannerDynamicCollectionViewCell: UICollectionViewCell {
+class FullBannerDynamicCollectionViewCell: TemplateDownloaderCollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     

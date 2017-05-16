@@ -16,7 +16,7 @@ class DashExtensions: NSObject {
             {
                 do {
                     let jsonResult: NSArray = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
-                    print("jsonData:\(jsonResult)")
+//                    print("jsonData:\(jsonResult)")
                     return jsonResult
                 } catch let error as NSError {
                     print(error.localizedDescription)

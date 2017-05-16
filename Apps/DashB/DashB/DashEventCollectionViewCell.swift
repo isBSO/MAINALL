@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashEventCollectionViewCell: UICollectionViewCell {
+class DashEventCollectionViewCell: TemplateDownloaderCollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var imageView: UIImageView!

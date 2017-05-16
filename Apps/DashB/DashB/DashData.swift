@@ -28,19 +28,22 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
             dash.downloadedFrom(completion: { (image) in
                 cell.imageView.image = image
             })
+            cell.downloadImage(imageUrl: dash.dashUI.imageUrl)
+        
             return cell;
          }
         
         if dash.dashType == DashType.menu {
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashMenuCell", for: indexPath) as! DashMenuCell
             cell.dashTitle.text = dash.dashTitle
-          
+//              cell.dataD = DataDownloader(url:dash.dashUI.imageUrl)
+//          cell.dataD.download(somethingURL: dash.dashUI.imageUrl)
        
             return cell;
         }
         
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "FullBannerDynamicCollectionViewCell", for: indexPath) as! FullBannerDynamicCollectionViewCell
-       
+        cell.downloadImage(imageUrl: dash.dashUI.imageUrl)
      
         dash.downloadedFrom(completion: { (image) in
             cell.imageView.image = image
@@ -52,7 +55,7 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let dash = DashDataSource.shared.items[indexPath.row]
+//        _ = DashDataSource.shared.items[indexPath.row]
         let viewController:MenuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as UIViewController as! MenuViewController
         // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
         

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DashMenuCell: UICollectionViewCell {
+class DashMenuCell: TemplateDownloaderCollectionViewCell {
     @IBOutlet var dashTitle: UILabel!
+
     
 }
