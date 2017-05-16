@@ -10,7 +10,7 @@ import UIKit
 import DashModels
 
 class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
-  
+    var vc:DashViewController?
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1;
@@ -20,7 +20,7 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
         let dash = DashDataSource.shared.items[indexPath.row]
          if dash.dashType == DashType.event {
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashEventCollectionViewCell", for: indexPath) as! DashEventCollectionViewCell
-            let dash = DashDataSource.shared.items[indexPath.row]
+          
             cell.titleLabel.text = dash.dashTitle
             //FullBannerDynamicCollectionViewCell
           //  cell.imageView.downloadedFrom(link: dash.dashUI.imageUrl)
@@ -30,6 +30,15 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
             })
             return cell;
          }
+        
+        if dash.dashType == DashType.menu {
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashMenuCell", for: indexPath) as! DashMenuCell
+            cell.dashTitle.text = dash.dashTitle
+          
+       
+            return cell;
+        }
+        
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "FullBannerDynamicCollectionViewCell", for: indexPath) as! FullBannerDynamicCollectionViewCell
        
      
@@ -41,6 +50,16 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return DashDataSource.shared.items.count
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let dash = DashDataSource.shared.items[indexPath.row]
+        let viewController:MenuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as UIViewController as! MenuViewController
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        vc?.navigationController?.pushViewController(viewController, animated: true);
+        
+    }
+  
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
