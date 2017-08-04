@@ -22,8 +22,7 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashEventCollectionViewCell", for: indexPath) as! DashEventCollectionViewCell
           
             cell.titleLabel.text = dash.dashTitle
-            //FullBannerDynamicCollectionViewCell
-          //  cell.imageView.downloadedFrom(link: dash.dashUI.imageUrl)
+         cell.viewAllButton.setTitle(dash.dashUI.viewAllTitle, for: UIControlState.normal)
        
             dash.downloadedFrom(completion: { (image) in
                 cell.imageView.image = image
@@ -41,6 +40,27 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
        
             return cell;
         }
+        
+        if dash.dashType == DashType.search {
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashSearchCollectionViewCell", for: indexPath) as! DashSearchCollectionViewCell
+            cell.titleLabel.text = dash.dashTitle
+            //              cell.dataD = DataDownloader(url:dash.dashUI.imageUrl)
+            //          cell.dataD.download(somethingURL: dash.dashUI.imageUrl)
+             cell.viewAllButton.setTitle(dash.dashUI.viewAllTitle, for: UIControlState.normal)
+            
+            return cell;
+        }
+        if dash.dashType == DashType.dashSKU {
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "SKUCELL", for: indexPath) as! SKUCELL
+            cell.titleLabel.text = dash.dashTitle
+            //              cell.dataD = DataDownloader(url:dash.dashUI.imageUrl)
+            //          cell.dataD.download(somethingURL: dash.dashUI.imageUrl)
+            cell.viewAllButton.setTitle(dash.dashUI.viewAllTitle, for: UIControlState.normal)
+            cell.imageView.image = UIImage(named: "bts")
+            
+            return cell;
+        }
+      
         
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "FullBannerDynamicCollectionViewCell", for: indexPath) as! FullBannerDynamicCollectionViewCell
         cell.downloadImage(imageUrl: dash.dashUI.imageUrl)
@@ -80,9 +100,9 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
         
         
         // wow finally got array
-        if DashDataSource.shared.items.count<1 {
+//        if DashDataSource.shared.items.count<1 {
             DashDataSource.shared.items = DashItem().parse(itemsResponse)
-        }
+//        }
       //
         
     }

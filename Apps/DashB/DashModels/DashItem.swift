@@ -12,15 +12,18 @@ public enum DashType {
     case notSet
     case event
     case dashValuePropFull
+    case search
+    case dashSKU
     case menu
 }
 
 public class DashUI: NSObject,NSCoding {
     public var imageUrl :String = String()
+    public var viewAllTitle :String = String()
     public var height :CGFloat = 0
     public var imageCache : UIImage  = UIImage()
     public var proportion :CGFloat = 0
-   public override init() {
+    public override init() {
         super.init()
     }
     required public init(coder decoder: NSCoder) {
@@ -61,9 +64,13 @@ public class DashItem: NSObject , NSCoding {
             if self.dashTypeString.contains("dashValuePropFull"){
                 return DashType.dashValuePropFull
             }
-            if self.dashTypeString.contains("dashMenu"){
-                return DashType.menu
+            if self.dashTypeString.contains("dashSearch"){
+                return DashType.search
             }
+            if self.dashTypeString.contains("dashSKU"){
+                return DashType.dashSKU
+            }
+            
             return DashType.notSet
         }
     }
@@ -105,6 +112,15 @@ public class DashItem: NSObject , NSCoding {
         if dashType.contains("dashValuePropFull"){
             return DashType.dashValuePropFull
         }
+        if dashType.contains("dashSearch"){
+            return DashType.search
+        }
+        if dashType.contains("dashSKU"){
+            return DashType.dashSKU
+        }
+        
+        
+        
         return DashType.notSet
     }
     
@@ -124,6 +140,7 @@ public class DashItem: NSObject , NSCoding {
             dashUI.imageUrl = dashUIDict["imageUrl"] as! String
             dashUI.height =  dashUIDict["height"] as! CGFloat
             dashUI.proportion =  dashUIDict["proportion"] as! CGFloat
+            dashUI.viewAllTitle =  dashUIDict["viewAllTitle"] as! String
             
             dash.dashUI = dashUI
             items.insert(dash, at: 0)

@@ -8,9 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		672F28551ECB58B300360277 /* TemplateDownloaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672F28541ECB58B300360277 /* TemplateDownloaderCollectionViewCell.swift */; };
+		6765B9141ECCEE8100777CED /* DashSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765B9131ECCEE8100777CED /* DashSearchCollectionViewCell.swift */; };
 		6776D0541EC0041900F5978B /* DashMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0531EC0041900F5978B /* DashMenuCell.swift */; };
 		6776D0561EC0181800F5978B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0551EC0181800F5978B /* MenuViewController.swift */; };
 		6776D0581EC01CF900F5978B /* DataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0571EC01CF900F5978B /* DataDownloader.swift */; };
+		67AE5DB81EFAC34F0085E171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AE5DB71EFAC34F0085E171 /* Assets.xcassets */; };
+		67AE5DBF1EFAC3500085E171 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67AE5DBE1EFAC3500085E171 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		67AE5DC31EFAC3500085E171 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE5DC21EFAC3500085E171 /* Messages.framework */; };
+		67AE5DC61EFAC3500085E171 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE5DC51EFAC3500085E171 /* MessagesViewController.swift */; };
+		67AE5DC91EFAC3500085E171 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AE5DC71EFAC3500085E171 /* MainInterface.storyboard */; };
+		67AE5DCB1EFAC3500085E171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AE5DCA1EFAC3500085E171 /* Assets.xcassets */; };
+		67F0DE1A1ECE0C8700D7FA76 /* SKUCELL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0DE191ECE0C8700D7FA76 /* SKUCELL.swift */; };
 		CCBADAC01EB0389A0005FD52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBADABF1EB0389A0005FD52 /* AppDelegate.swift */; };
 		CCBADAC21EB0389A0005FD52 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBADAC11EB0389A0005FD52 /* DashViewController.swift */; };
 		CCBADAC51EB0389A0005FD52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBADAC31EB0389A0005FD52 /* Main.storyboard */; };
@@ -30,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		67AE5DC01EFAC3500085E171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCBADAB41EB0389A0005FD52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67AE5DBD1EFAC3500085E171;
+			remoteInfo = MessagesExtension;
+		};
 		CCBADAD11EB0389B0005FD52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCBADAB41EB0389A0005FD52 /* Project object */;
@@ -47,6 +62,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		67AE5DD21EFAC3500085E171 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67AE5DBF1EFAC3500085E171 /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCBADAF21EB042360005FD52 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +87,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		549F1E1FCED089EFACCDF8E6 /* Pods-DashB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DashB/Pods-DashB.debug.xcconfig"; sourceTree = "<group>"; };
 		672F28541ECB58B300360277 /* TemplateDownloaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateDownloaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		6765B9131ECCEE8100777CED /* DashSearchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		6776D0531EC0041900F5978B /* DashMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashMenuCell.swift; sourceTree = "<group>"; };
 		6776D0551EC0181800F5978B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6776D0571EC01CF900F5978B /* DataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDownloader.swift; sourceTree = "<group>"; };
+		67AE5DB51EFAC34F0085E171 /* DashB IME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DashB IME.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AE5DB71EFAC34F0085E171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67AE5DB91EFAC34F0085E171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67AE5DBE1EFAC3500085E171 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AE5DC21EFAC3500085E171 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		67AE5DC51EFAC3500085E171 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		67AE5DC81EFAC3500085E171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		67AE5DCA1EFAC3500085E171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67AE5DCC1EFAC3500085E171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F0DE191ECE0C8700D7FA76 /* SKUCELL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKUCELL.swift; sourceTree = "<group>"; };
+		B626270CFD4EE5EB1C875E71 /* Pods-DashB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DashB/Pods-DashB.release.xcconfig"; sourceTree = "<group>"; };
+		BEA267B37C096ECCC8FF7F2A /* Pods_DashB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBADABC1EB0389A0005FD52 /* DashB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBADABF1EB0389A0005FD52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCBADAC11EB0389A0005FD52 /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +128,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		67AE5DBB1EFAC3500085E171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AE5DC31EFAC3500085E171 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCBADAB91EB0389A0005FD52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,13 +161,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3035B46A2EF78E451A6ED05C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEA267B37C096ECCC8FF7F2A /* Pods_DashB.framework */,
+				67AE5DC21EFAC3500085E171 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67AE5DB61EFAC34F0085E171 /* DashB IME */ = {
+			isa = PBXGroup;
+			children = (
+				67AE5DB71EFAC34F0085E171 /* Assets.xcassets */,
+				67AE5DB91EFAC34F0085E171 /* Info.plist */,
+			);
+			path = "DashB IME";
+			sourceTree = "<group>";
+		};
+		67AE5DC41EFAC3500085E171 /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				67AE5DC51EFAC3500085E171 /* MessagesViewController.swift */,
+				67AE5DC71EFAC3500085E171 /* MainInterface.storyboard */,
+				67AE5DCA1EFAC3500085E171 /* Assets.xcassets */,
+				67AE5DCC1EFAC3500085E171 /* Info.plist */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
 		CCBADAB31EB0389A0005FD52 = {
 			isa = PBXGroup;
 			children = (
 				CCBADABE1EB0389A0005FD52 /* DashB */,
 				CCBADAD31EB0389B0005FD52 /* DashBUITests */,
 				CCBADAE71EB042360005FD52 /* DashModels */,
+				67AE5DB61EFAC34F0085E171 /* DashB IME */,
+				67AE5DC41EFAC3500085E171 /* MessagesExtension */,
 				CCBADABD1EB0389A0005FD52 /* Products */,
+				E6F405401C4E8421CA162B15 /* Pods */,
+				3035B46A2EF78E451A6ED05C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +210,8 @@
 				CCBADABC1EB0389A0005FD52 /* DashB.app */,
 				CCBADAD01EB0389B0005FD52 /* DashBUITests.xctest */,
 				CCBADAE61EB042360005FD52 /* DashModels.framework */,
+				67AE5DB51EFAC34F0085E171 /* DashB IME.app */,
+				67AE5DBE1EFAC3500085E171 /* MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +223,7 @@
 				CCBADAC11EB0389A0005FD52 /* DashViewController.swift */,
 				6776D0551EC0181800F5978B /* MenuViewController.swift */,
 				CCBADAF51EB0455A0005FD52 /* DashEventCollectionViewCell.swift */,
+				6765B9131ECCEE8100777CED /* DashSearchCollectionViewCell.swift */,
 				672F28541ECB58B300360277 /* TemplateDownloaderCollectionViewCell.swift */,
 				CCBADAFB1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift */,
 				6776D0531EC0041900F5978B /* DashMenuCell.swift */,
@@ -150,6 +234,7 @@
 				CCBADAF71EB049200005FD52 /* dashData.json */,
 				CCBADAC31EB0389A0005FD52 /* Main.storyboard */,
 				CCBADAC61EB0389A0005FD52 /* Assets.xcassets */,
+				67F0DE191ECE0C8700D7FA76 /* SKUCELL.swift */,
 				CCBADAC81EB0389A0005FD52 /* LaunchScreen.storyboard */,
 				CCBADACB1EB0389A0005FD52 /* Info.plist */,
 			);
@@ -175,6 +260,15 @@
 			path = DashModels;
 			sourceTree = "<group>";
 		};
+		E6F405401C4E8421CA162B15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				549F1E1FCED089EFACCDF8E6 /* Pods-DashB.debug.xcconfig */,
+				B626270CFD4EE5EB1C875E71 /* Pods-DashB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -189,6 +283,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		67AE5DB41EFAC34F0085E171 /* DashB IME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67AE5DD31EFAC3500085E171 /* Build configuration list for PBXNativeTarget "DashB IME" */;
+			buildPhases = (
+				67AE5DB31EFAC34F0085E171 /* Resources */,
+				67AE5DD21EFAC3500085E171 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67AE5DC11EFAC3500085E171 /* PBXTargetDependency */,
+			);
+			name = "DashB IME";
+			productName = "DashB IME";
+			productReference = 67AE5DB51EFAC34F0085E171 /* DashB IME.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		67AE5DBD1EFAC3500085E171 /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67AE5DD11EFAC3500085E171 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				67AE5DBA1EFAC3500085E171 /* Sources */,
+				67AE5DBB1EFAC3500085E171 /* Frameworks */,
+				67AE5DBC1EFAC3500085E171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 67AE5DBE1EFAC3500085E171 /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		CCBADABB1EB0389A0005FD52 /* DashB */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCBADAD91EB0389B0005FD52 /* Build configuration list for PBXNativeTarget "DashB" */;
@@ -254,6 +382,16 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = isBSO;
 				TargetAttributes = {
+					67AE5DB41EFAC34F0085E171 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T54A4GSKNR;
+						ProvisioningStyle = Automatic;
+					};
+					67AE5DBD1EFAC3500085E171 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T54A4GSKNR;
+						ProvisioningStyle = Automatic;
+					};
 					CCBADABB1EB0389A0005FD52 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
@@ -287,11 +425,30 @@
 				CCBADABB1EB0389A0005FD52 /* DashB */,
 				CCBADACF1EB0389B0005FD52 /* DashBUITests */,
 				CCBADAE51EB042360005FD52 /* DashModels */,
+				67AE5DB41EFAC34F0085E171 /* DashB IME */,
+				67AE5DBD1EFAC3500085E171 /* MessagesExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		67AE5DB31EFAC34F0085E171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AE5DB81EFAC34F0085E171 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67AE5DBC1EFAC3500085E171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AE5DCB1EFAC3500085E171 /* Assets.xcassets in Resources */,
+				67AE5DC91EFAC3500085E171 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCBADABA1EB0389A0005FD52 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +477,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		67AE5DBA1EFAC3500085E171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AE5DC61EFAC3500085E171 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCBADAB81EB0389A0005FD52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,12 +493,14 @@
 				CCBADAFE1EBAA76B0005FD52 /* DashDataSource.swift in Sources */,
 				6776D0541EC0041900F5978B /* DashMenuCell.swift in Sources */,
 				CCBADAFA1EB04B360005FD52 /* DashExtensions.swift in Sources */,
+				67F0DE1A1ECE0C8700D7FA76 /* SKUCELL.swift in Sources */,
 				6776D0561EC0181800F5978B /* MenuViewController.swift in Sources */,
 				CCBADAC21EB0389A0005FD52 /* DashViewController.swift in Sources */,
 				672F28551ECB58B300360277 /* TemplateDownloaderCollectionViewCell.swift in Sources */,
 				6776D0581EC01CF900F5978B /* DataDownloader.swift in Sources */,
 				CCBADAC01EB0389A0005FD52 /* AppDelegate.swift in Sources */,
 				CCBADAF61EB0455A0005FD52 /* DashEventCollectionViewCell.swift in Sources */,
+				6765B9141ECCEE8100777CED /* DashSearchCollectionViewCell.swift in Sources */,
 				CCBADAFC1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +524,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		67AE5DC11EFAC3500085E171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67AE5DBD1EFAC3500085E171 /* MessagesExtension */;
+			targetProxy = 67AE5DC01EFAC3500085E171 /* PBXContainerItemProxy */;
+		};
 		CCBADAD21EB0389B0005FD52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CCBADABB1EB0389A0005FD52 /* DashB */;
@@ -370,6 +542,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		67AE5DC71EFAC3500085E171 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67AE5DC81EFAC3500085E171 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		CCBADAC31EB0389A0005FD52 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -389,6 +569,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		67AE5DCD1EFAC3500085E171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T54A4GSKNR;
+				INFOPLIST_FILE = "DashB IME/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.staples.DashB-IME";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		67AE5DCE1EFAC3500085E171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T54A4GSKNR;
+				INFOPLIST_FILE = "DashB IME/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.staples.DashB-IME";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		67AE5DCF1EFAC3500085E171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = T54A4GSKNR;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.staples.DashB-IME.MessagesExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		67AE5DD01EFAC3500085E171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = T54A4GSKNR;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.staples.DashB-IME.MessagesExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		CCBADAD71EB0389B0005FD52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -486,6 +720,7 @@
 		};
 		CCBADADA1EB0389B0005FD52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549F1E1FCED089EFACCDF8E6 /* Pods-DashB.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -500,6 +735,7 @@
 		};
 		CCBADADB1EB0389B0005FD52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B626270CFD4EE5EB1C875E71 /* Pods-DashB.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -592,6 +828,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		67AE5DD11EFAC3500085E171 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AE5DCF1EFAC3500085E171 /* Debug */,
+				67AE5DD01EFAC3500085E171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67AE5DD31EFAC3500085E171 /* Build configuration list for PBXNativeTarget "DashB IME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AE5DCD1EFAC3500085E171 /* Debug */,
+				67AE5DCE1EFAC3500085E171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CCBADAB71EB0389A0005FD52 /* Build configuration list for PBXProject "DashB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
