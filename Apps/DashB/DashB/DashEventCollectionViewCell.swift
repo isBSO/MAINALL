@@ -10,6 +10,7 @@ import UIKit
 
 class DashEventCollectionViewCell: TemplateDownloaderCollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet var viewAllButton: UIButton!
     
     @IBOutlet weak var imageView: UIImageView!
 }

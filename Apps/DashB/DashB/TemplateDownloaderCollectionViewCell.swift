@@ -47,6 +47,7 @@ class TemplateDownloaderCollectionViewCell: UICollectionViewCell,DataDownloaderP
        
     }
     
+    
    
     
 }

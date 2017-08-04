@@ -1,53 +1,5 @@
  [
   {
-  "dashTitle": "Every thing you need in your office",
-  "dashType": "dashEvent",
-  "dashUI": {
-  "height": 200,
-  "proportion": 0.6,
-  "dashDisplaytitle": "Spring Event",
-  "dashMoreTitle": " View More",
-  "dashDisplaySubtitle": "Spring Event in full blow",
-  "imageUrl": "https://go.staplesadvantage.com/rs/896-JNU-907/images/sba-lead-gen-2017-services-item.jpg"
-  }
-  },
-  {
-  "dashTitle": "$29.99 offers",
-  "dashType": "dashEvent",
-  "dashUI": {
-  "height": 220,
-  "proportion": 0.66,
-  "dashDisplaytitle": "Spring Event",
-  "dashMoreTitle": " View More",
-  "dashDisplaySubtitle": "Spring Event in full blow",
-  "imageUrl": "https://s7d5.scene7.com/is/image/Staples/59408_ios_710x350_paper?$710x350%20new%20iphone$"
-  }
-  },
-  {
-  "dashTitle": "",
-  "dashType": "dashValuePropFull",
-  "dashUI": {
-  "height": 220,
-  "proportion": 1,
-  "dashDisplaytitle": "Spring Event",
-  "dashMoreTitle": " View More",
-  "dashDisplaySubtitle": "Spring Event in full blow",
-  "imageUrl": "https://unveiledwife.com/wp-content/uploads/2015/11/25-christmas-gift-ideas-for-your-husband.jpg"
-  }
-  },
-  {
-  "dashTitle": "Surface VS iPad Pro",
-  "dashType": "dashEvent",
-  "dashUI": {
-  "height": 220,
-  "proportion": 0.66,
-  "dashDisplaytitle": "Spring Event",
-  "dashMoreTitle": " View More",
-  "dashDisplaySubtitle": "Spring Event in full blow",
-  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg"
-  }
-  },
-  {
   "dashTitle": "Full banner Ad",
   "dashType": "dashValuePropFull",
   "dashUI": {
@@ -56,11 +8,25 @@
   "dashDisplaytitle": "Spring Event",
   "dashMoreTitle": " View More",
   "dashDisplaySubtitle": "Spring Event in full blow",
-  "imageUrl": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/howtoapplyga.jpg"
+  "imageUrl": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/howtoapplyga.jpg",
+  "viewAllTitle": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/howtoapplyga.jpg"
   }
   },
   {
-  "dashTitle": "Apple watch event starts now",
+  "dashTitle": "Full banner Ad",
+  "dashType": "dashValuePropFull",
+  "dashUI": {
+  "height": 0,
+  "proportion": 0.6,
+  "dashDisplaytitle": "Spring Event",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Spring Event in full blow",
+  "imageUrl": "http://www.kiwimagonline.com/wp-content/uploads/2013/07/Untitled-21.jpg",
+  "viewAllTitle": "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/howtoapplyga.jpg"
+  }
+  },
+  {
+  "dashTitle": "Mother's Day items you cannot miss",
   "dashType": "dashEvent",
   "dashLink": "dash/Event/12345",
   "dashUI": {
@@ -69,20 +35,92 @@
   "dashDisplaytitle": "Spring Event",
   "dashMoreTitle": " View More",
   "dashDisplaySubtitle": "Spring Event in full blow",
-  "imageUrl": "https://cdn.macrumors.com/article-new/2016/09/apple-watch-series-2-2.jpg"
+  "imageUrl": "https://cdn.macrumors.com/article-new/2016/09/apple-watch-series-2-2.jpg",
+  "viewAllTitle": "See all the Deals gfor perfect Gift to Mother"
   }
   },
   {
-  "dashTitle": "Demo ",
-  "dashType": "dashMenu",
-  "dashLink": "dash/menu",
+  "dashTitle": "Continue Searching.. ",
+  "dashType": "dashSearch",
+  "dashLink": "dash/search/Paper",
   "dashUI": {
-  "height": 66,
-  "proportion": 0.1,
+  "height": 288,
+  "proportion": 0,
   "dashDisplaytitle": "",
   "dashMoreTitle": " View More",
   "dashDisplaySubtitle": "Menu",
-  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg"
+  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
+  "viewAllTitle": "continue your Search"
+  }
+  },
+  {
+  "dashTitle": "Daily Deals",
+  "dashType": "dashSearch",
+  "dashLink": "dash/search/Paper",
+  "dashUI": {
+  "height": 288,
+  "proportion": 0,
+  "dashDisplaytitle": "",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Menu",
+  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
+  "viewAllTitle": "View all Deals"
+  }
+  },
+  {
+  "dashTitle": "Clearance Event",
+  "dashType": "dashSearch",
+  "dashLink": "dash/search/Paper",
+  "dashUI": {
+  "height": 288,
+  "proportion": 0,
+  "dashDisplaytitle": "",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Menu",
+  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
+  "viewAllTitle": "View all in Clearance"
+  }
+  },
+  {
+  "dashTitle": "Just for you",
+  "dashType": "dashSKU",
+  "dashLink": "dash/search/Paper",
+  "dashUI": {
+  "height": 373,
+  "proportion": 0,
+  "dashDisplaytitle": "",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Menu",
+  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
+  "viewAllTitle": "View item just for you"
+  }
+  },
+  {
+  "dashTitle": "Daily Deals",
+  "dashType": "dashSKU",
+  "dashLink": "dash/search/Paper",
+  "dashUI": {
+  "height": 373,
+  "proportion": 0,
+  "dashDisplaytitle": "",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Menu",
+  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
+  "viewAllTitle": "View Today's Deals"
+  }
+  },
+  {
+  "dashTitle": "Check out the back to school in your Area",
+  "dashType": "dashSKU",
+  "dashLink": "dash/search/Paper",
+  "dashUI": {
+  "height": 373,
+  "proportion": 0,
+  "dashDisplaytitle": "",
+  "dashMoreTitle": " View More",
+  "dashDisplaySubtitle": "Menu",
+  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
+  "viewAllTitle": "View Amazing Deals"
   }
   }
   ]

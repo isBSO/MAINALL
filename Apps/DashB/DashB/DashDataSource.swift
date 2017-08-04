@@ -9,6 +9,7 @@
 import UIKit
 import DashModels
 
+
 class DashDataSource: NSObject {
    var items = Array<DashItem> ()
     let lastVersion: Float = 1.01;
@@ -82,6 +83,11 @@ extension DashItem {
                 completion(image)
             }
             }.resume()
+        
+    }
+    
+    func downloadPackage(){
+        
         
     }
     
