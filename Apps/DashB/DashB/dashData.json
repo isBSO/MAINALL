@@ -94,33 +94,5 @@
   "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
   "viewAllTitle": "View item just for you"
   }
-  },
-  {
-  "dashTitle": "Daily Deals",
-  "dashType": "dashSKU",
-  "dashLink": "dash/search/Paper",
-  "dashUI": {
-  "height": 373,
-  "proportion": 0,
-  "dashDisplaytitle": "",
-  "dashMoreTitle": " View More",
-  "dashDisplaySubtitle": "Menu",
-  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
-  "viewAllTitle": "View Today's Deals"
-  }
-  },
-  {
-  "dashTitle": "Check out the back to school in your Area",
-  "dashType": "dashSKU",
-  "dashLink": "dash/search/Paper",
-  "dashUI": {
-  "height": 373,
-  "proportion": 0,
-  "dashDisplaytitle": "",
-  "dashMoreTitle": " View More",
-  "dashDisplaySubtitle": "Menu",
-  "imageUrl": "https://cdn2.pcadvisor.co.uk/cmsdata/reviews/3625513/surface_pro_4_vs_ipad_pro_3.jpg",
-  "viewAllTitle": "View Amazing Deals"
-  }
   }
   ]

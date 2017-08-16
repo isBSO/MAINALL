@@ -15,6 +15,8 @@
 		67DE8DB41F33FB9600B90890 /* SwanModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DE8DB21F33FB9600B90890 /* SwanModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67DE8DB71F33FB9600B90890 /* SwanModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE8DB01F33FB9600B90890 /* SwanModels.framework */; };
 		67DE8DB81F33FB9600B90890 /* SwanModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE8DB01F33FB9600B90890 /* SwanModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67DE8DC31F33FC8F00B90890 /* SWPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE8DC21F33FC8F00B90890 /* SWPlace.swift */; };
+		67DE8DC91F33FCCC00B90890 /* SWPlace.swift in Headers */ = {isa = PBXBuildFile; fileRef = 67DE8DC21F33FC8F00B90890 /* SWPlace.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		67DE8DB01F33FB9600B90890 /* SwanModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwanModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DE8DB21F33FB9600B90890 /* SwanModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwanModels.h; sourceTree = "<group>"; };
 		67DE8DB31F33FB9600B90890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67DE8DC21F33FC8F00B90890 /* SWPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				67DE8DB21F33FB9600B90890 /* SwanModels.h */,
+				67DE8DC21F33FC8F00B90890 /* SWPlace.swift */,
 				67DE8DB31F33FB9600B90890 /* Info.plist */,
 			);
 			path = SwanModels;
@@ -121,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DE8DB41F33FB9600B90890 /* SwanModels.h in Headers */,
+				67DE8DC91F33FCCC00B90890 /* SWPlace.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +185,7 @@
 					};
 					67DE8DAF1F33FB9600B90890 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DE8DC31F33FC8F00B90890 /* SWPlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +374,7 @@
 		67D97EA51F33F9DD006EC1C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Swan/Info.plist;
@@ -380,6 +388,7 @@
 		67D97EA61F33F9DD006EC1C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Swan/Info.plist;
@@ -394,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -413,6 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.SwanModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -424,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -478,6 +490,7 @@
 				67DE8DBA1F33FB9600B90890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

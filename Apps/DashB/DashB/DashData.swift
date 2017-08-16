@@ -27,7 +27,7 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
             dash.downloadedFrom(completion: { (image) in
                 cell.imageView.image = image
             })
-            cell.downloadImage(imageUrl: dash.dashUI.imageUrl)
+       
         
             return cell;
          }
@@ -35,8 +35,7 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
         if dash.dashType == DashType.menu {
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DashMenuCell", for: indexPath) as! DashMenuCell
             cell.dashTitle.text = dash.dashTitle
-//              cell.dataD = DataDownloader(url:dash.dashUI.imageUrl)
-//          cell.dataD.download(somethingURL: dash.dashUI.imageUrl)
+            
        
             return cell;
         }
@@ -53,8 +52,7 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
         if dash.dashType == DashType.dashSKU {
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "SKUCELL", for: indexPath) as! SKUCELL
             cell.titleLabel.text = dash.dashTitle
-            //              cell.dataD = DataDownloader(url:dash.dashUI.imageUrl)
-            //          cell.dataD.download(somethingURL: dash.dashUI.imageUrl)
+            
             cell.viewAllButton.setTitle(dash.dashUI.viewAllTitle, for: UIControlState.normal)
             cell.imageView.image = UIImage(named: "bts")
             
@@ -63,8 +61,8 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
       
         
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "FullBannerDynamicCollectionViewCell", for: indexPath) as! FullBannerDynamicCollectionViewCell
-        cell.downloadImage(imageUrl: dash.dashUI.imageUrl)
-     
+        
+        
         dash.downloadedFrom(completion: { (image) in
             cell.imageView.image = image
         })
@@ -75,11 +73,17 @@ class DashData: NSObject, UICollectionViewDataSource ,UICollectionViewDelegateFl
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-//        _ = DashDataSource.shared.items[indexPath.row]
-        let viewController:MenuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as UIViewController as! MenuViewController
-        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
         
-        vc?.navigationController?.pushViewController(viewController, animated: true);
+        let viewController:MenuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as UIViewController as! MenuViewController
+        viewController.dashDataEach = DashDataSource.shared.items[indexPath.row]
+       DImageAnimater.shared.transitioningImageView = UIImageView()
+        
+        DImageAnimater.shared.startingRect = collectionView .convert((collectionView.cellForItem(at: indexPath)?.frame)!, to: vc?.view)
+         DImageAnimater.shared.transitioningImageView.image =  viewController.dashDataEach.dashUI.imageCache
+        DImageAnimater.shared.startAnimating()
+        
+        
+        vc?.navigationController?.pushViewController(viewController, animated: false);
         
     }
   
