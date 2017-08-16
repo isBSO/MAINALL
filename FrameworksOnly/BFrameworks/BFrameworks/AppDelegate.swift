@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Swan
+//  BFrameworks
 //
-
+//  Created by isBSO on 8/16/17.
 //  Copyright © 2017 isBSO. All rights reserved.
 //
 
