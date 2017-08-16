@@ -12,6 +12,8 @@
 		67DE8D991F33FB6600B90890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DE8D971F33FB6600B90890 /* Main.storyboard */; };
 		67DE8D9B1F33FB6600B90890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DE8D9A1F33FB6600B90890 /* Assets.xcassets */; };
 		67DE8D9E1F33FB6600B90890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DE8D9C1F33FB6600B90890 /* LaunchScreen.storyboard */; };
+		67DE8DC41F33FCA400B90890 /* SwanModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE8DC11F33FC6E00B90890 /* SwanModels.framework */; };
+		67DE8DC51F33FCA400B90890 /* SwanModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE8DC11F33FC6E00B90890 /* SwanModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +24,35 @@
 			remoteGlobalIDString = 67D97E921F33F9DD006EC1C9;
 			remoteInfo = Swan;
 		};
+		67DE8DC01F33FC6E00B90890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67DE8DA51F33FB7600B90890 /* Swan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 67DE8DB01F33FB9600B90890;
+			remoteInfo = SwanModels;
+		};
+		67DE8DC61F33FCA400B90890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67DE8DA51F33FB7600B90890 /* Swan.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 67DE8DAF1F33FB9600B90890;
+			remoteInfo = SwanModels;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67DE8DC81F33FCA400B90890 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67DE8DC51F33FCA400B90890 /* SwanModels.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		67DE8D901F33FB6600B90890 /* TopTen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopTen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DE8DC41F33FCA400B90890 /* SwanModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				67DE8DAA1F33FB7600B90890 /* Swan.app */,
+				67DE8DC11F33FC6E00B90890 /* SwanModels.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +126,12 @@
 				67DE8D8C1F33FB6600B90890 /* Sources */,
 				67DE8D8D1F33FB6600B90890 /* Frameworks */,
 				67DE8D8E1F33FB6600B90890 /* Resources */,
+				67DE8DC81F33FCA400B90890 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67DE8DC71F33FCA400B90890 /* PBXTargetDependency */,
 			);
 			name = TopTen;
 			productName = TopTen;
@@ -151,6 +185,13 @@
 			remoteRef = 67DE8DA91F33FB7600B90890 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		67DE8DC11F33FC6E00B90890 /* SwanModels.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwanModels.framework;
+			remoteRef = 67DE8DC01F33FC6E00B90890 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -177,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67DE8DC71F33FCA400B90890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwanModels;
+			targetProxy = 67DE8DC61F33FCA400B90890 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		67DE8D971F33FB6600B90890 /* Main.storyboard */ = {
@@ -304,6 +353,7 @@
 		67DE8DA31F33FB6600B90890 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TopTen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -317,6 +367,7 @@
 		67DE8DA41F33FB6600B90890 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TopTen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -346,6 +397,7 @@
 				67DE8DA41F33FB6600B90890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

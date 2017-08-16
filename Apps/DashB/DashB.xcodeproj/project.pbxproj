@@ -12,6 +12,7 @@
 		6776D0541EC0041900F5978B /* DashMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0531EC0041900F5978B /* DashMenuCell.swift */; };
 		6776D0561EC0181800F5978B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0551EC0181800F5978B /* MenuViewController.swift */; };
 		6776D0581EC01CF900F5978B /* DataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776D0571EC01CF900F5978B /* DataDownloader.swift */; };
+		67891B3B1F3D51A80084C09C /* DImageAnimater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67891B3A1F3D51A80084C09C /* DImageAnimater.swift */; };
 		67AE5DB81EFAC34F0085E171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AE5DB71EFAC34F0085E171 /* Assets.xcassets */; };
 		67AE5DBF1EFAC3500085E171 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67AE5DBE1EFAC3500085E171 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		67AE5DC31EFAC3500085E171 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE5DC21EFAC3500085E171 /* Messages.framework */; };
@@ -93,6 +94,7 @@
 		6776D0531EC0041900F5978B /* DashMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashMenuCell.swift; sourceTree = "<group>"; };
 		6776D0551EC0181800F5978B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6776D0571EC01CF900F5978B /* DataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDownloader.swift; sourceTree = "<group>"; };
+		67891B3A1F3D51A80084C09C /* DImageAnimater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DImageAnimater.swift; sourceTree = "<group>"; };
 		67AE5DB51EFAC34F0085E171 /* DashB IME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DashB IME.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AE5DB71EFAC34F0085E171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67AE5DB91EFAC34F0085E171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,6 +192,30 @@
 			path = MessagesExtension;
 			sourceTree = "<group>";
 		};
+		67FFA3AB1F450EE2003623EB /* ImageAnimater */ = {
+			isa = PBXGroup;
+			children = (
+				67891B3A1F3D51A80084C09C /* DImageAnimater.swift */,
+			);
+			name = ImageAnimater;
+			sourceTree = "<group>";
+		};
+		67FFA3AC1F450EF0003623EB /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				CCBADADF1EB03C930005FD52 /* DashData.swift */,
+			);
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		67FFA3AD1F450EFB003623EB /* DataDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				6776D0571EC01CF900F5978B /* DataDownloader.swift */,
+			);
+			name = DataDownloader;
+			sourceTree = "<group>";
+		};
 		CCBADAB31EB0389A0005FD52 = {
 			isa = PBXGroup;
 			children = (
@@ -227,9 +253,10 @@
 				672F28541ECB58B300360277 /* TemplateDownloaderCollectionViewCell.swift */,
 				CCBADAFB1EB18D7F0005FD52 /* FullBannerDynamicCollectionViewCell.swift */,
 				6776D0531EC0041900F5978B /* DashMenuCell.swift */,
-				CCBADADF1EB03C930005FD52 /* DashData.swift */,
-				6776D0571EC01CF900F5978B /* DataDownloader.swift */,
+				67FFA3AC1F450EF0003623EB /* Collection */,
+				67FFA3AD1F450EFB003623EB /* DataDownloader */,
 				CCBADAFD1EBAA76B0005FD52 /* DashDataSource.swift */,
+				67FFA3AB1F450EE2003623EB /* ImageAnimater */,
 				CCBADAF91EB04B360005FD52 /* DashExtensions.swift */,
 				CCBADAF71EB049200005FD52 /* dashData.json */,
 				CCBADAC31EB0389A0005FD52 /* Main.storyboard */,
@@ -394,6 +421,7 @@
 					};
 					CCBADABB1EB0389A0005FD52 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 86J3LT48Q3;
 						ProvisioningStyle = Automatic;
 					};
 					CCBADACF1EB0389B0005FD52 = {
@@ -492,6 +520,7 @@
 				CCBADAE01EB03C930005FD52 /* DashData.swift in Sources */,
 				CCBADAFE1EBAA76B0005FD52 /* DashDataSource.swift in Sources */,
 				6776D0541EC0041900F5978B /* DashMenuCell.swift in Sources */,
+				67891B3B1F3D51A80084C09C /* DImageAnimater.swift in Sources */,
 				CCBADAFA1EB04B360005FD52 /* DashExtensions.swift in Sources */,
 				67F0DE1A1ECE0C8700D7FA76 /* SKUCELL.swift in Sources */,
 				6776D0561EC0181800F5978B /* MenuViewController.swift in Sources */,
@@ -724,7 +753,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 86J3LT48Q3;
 				INFOPLIST_FILE = DashB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.DashB;
@@ -739,7 +768,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 86J3LT48Q3;
 				INFOPLIST_FILE = DashB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.DashB;
