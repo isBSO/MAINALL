@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import SwanModels
+
 
 class ViewController: UIViewController {
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      print(SWPlace())  
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
